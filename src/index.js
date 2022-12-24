@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import CommentList from './chapter_05/CommentList';
+import AttendanceBook from './chapter_10/AttendanceBook';
 
 ReactDOM.render(
   <React.StrictMode>
+<<<<<<< HEAD
     <CommentList/>
+=======
+    <AttendanceBook />
+>>>>>>> 35fa96c (chapter07 end)
   </React.StrictMode>,
   document.getElementById('root')
 );

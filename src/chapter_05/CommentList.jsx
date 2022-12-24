@@ -14,19 +14,19 @@ const comments = [
         name: "박하준",
         comment: "안녕하세요 막내입니다.",
     },
+
 ]
 
 function CommentList(props) {
     return (
         <div>
-            {/* <Comment name={"서태지"} comment={"안녕하세요.쭌쭌이파더입니다."}/>
-            <Comment name={"유재석"} comment={"안녕하세요.박아가입니다."}/> */}
-            {comments.map((comment) => {
-                return (
-                    <Comment name={comment.name} comment={comment.comment} />
-                );
+            {
+                comments.map((comment) => {
+                    return (
+                        <Comment name={comment.name} comment={comment.comment} />
+                    );
+                })
             }
-            )}
         </div>
     );
 }
