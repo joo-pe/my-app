@@ -1,12 +1,20 @@
-import Card from "./Card";
+function Card(props) {
+    const { title, backgroundColor, children } = props;
 
-function ProfileCard(props) {
     return (
-        <Card title="Inje Lee" backgroundColor="#4ea04e">
-            <p>안녕하세요, 소플입니다.</p>
-            <p>저는 리액트를 사용해서 개발하고 있습니다.</p>
-        </Card>
+        <div
+            style={{
+                margin: 8,
+                padding: 8,
+                borderRadius: 8,
+                boxShadow: "0px 0px 4px grey",
+                backgroundColor: backgroundColor || "white",
+            }}
+        >
+            {title && <h1>{title}</h1>}
+            {children}
+        </div>
     );
 }
 
-export default ProfileCard;
+export default Card;
